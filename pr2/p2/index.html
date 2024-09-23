@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с DOM</title>
+    <style>
+        .menu-item {
+            color: black;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script src="domScript.js" defer></script>
+</head>
+<body>
+    <h1>Работа с DOM</h1>
+
+    <!-- Список меню -->
+    <ul id="menu">
+        <li class="menu-item">Home</li>
+        <li class="menu-item">About</li>
+        <li class="menu-item">Services</li>
+        <li class="menu-item">Contact</li>
+    </ul>
+
+    <!-- Абзац для копирования текста -->
+    <p id="paragraph">Здесь будет текст меню:</p>
+
+    <!-- Кнопка для копирования текста -->
+    <button id="copyButton">Копировать текст меню</button>
+
+    <!-- Поле ввода для поиска -->
+    <input type="text" id="searchInput" placeholder="Поиск...">
+
+    <!-- Кнопка для изменения стиля -->
+    <button id="changeStyleButton">Изменить стиль</button>
+
+</body>
+</html>

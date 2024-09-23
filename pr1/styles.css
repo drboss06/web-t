@@ -1,0 +1,125 @@
+/* Подключение внешних шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Селекторы по тегу */
+h1, h2, h3 {
+    text-align: center;
+    color: #4a90e2;
+}
+
+/* Селектор по классу */
+.highlight {
+    color: #e94e77;
+    font-weight: bold;
+}
+
+/* Селектор по id */
+#main-content {
+    padding: 20px;
+}
+
+/* Псевдокласс */
+a:hover {
+    color: #ff5722;
+}
+
+/* Псевдоэлемент */
+p::first-letter {
+    font-size: 2em;
+    color: #e94e77;
+}
+
+/* Анимация CSS3 */
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Использование Flexbox */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Позиционирование и z-index */
+iframe {
+    position: relative;
+    z-index: 1;
+    border: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Адаптивный дизайн с @media */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
+
+/* Использование transform */
+img {
+    display: block;
+    margin: 20px auto;
+    transform: rotate(5deg);
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: rotate(0deg);
+}
+
+/* Использование calc для вычислений */
+div.intro {
+    padding: calc(10px + 2%);
+    background-color: #e0f7fa;
+}
+
+/* Flexbox для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: space-between;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Анимация через @keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 2s ease-in;
+}

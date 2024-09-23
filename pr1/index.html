@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, разработка, веб-дизайн">
+    <meta name="description" content="Пример HTML и CSS документа с различными элементами и стилями">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Документ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Заголовок 1 уровня</h1>
+        <h2>Подзаголовок 2 уровня</h2>
+        <h3>Подзаголовок 3 уровня</h3>
+    </header>
+
+    <section id="main-content">
+        <div class="intro">
+            <p>Это пример параграфа с <span class="highlight">выделенным</span> текстом.</p>
+            <a href="https://example.com" target="_blank">Ссылка на внешний ресурс</a>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://via.placeholder.com/300/FF5733/FFFFFF">
+            <source media="(min-width: 601px)" srcset="https://via.placeholder.com/300/FF5733/FFFFFF">
+            <img src="https://via.placeholder.com/300/FF5733/FFFFFF" alt="Пример изображения 300x300">
+        </picture>
+        
+
+        <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+        <ul>
+            <li>Пункт списка 1</li>
+            <li>Пункт списка 2</li>
+            <li>Пункт списка 3</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>Заголовок 1</th>
+                <th>Заголовок 2</th>
+            </tr>
+            <tr>
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
