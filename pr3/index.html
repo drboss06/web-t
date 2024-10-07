@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 id="gallery-title"></h1>
+    
+    <div id="accordion"></div>
+    
+    <div id="tabs">
+        <ul></ul>
+        <div id="image-container"></div>
+    </div>
+    
+    <button id="toggle-images">Переключить классы изображений</button>
+    
+    <div id="datepicker"></div>
+    <div id="progressbar"></div>
+    
+    <div id="lightbox" style="display:none;">
+        <span id="close-lightbox">Закрыть</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <button id="next-image">Следующее изображение</button>
+    </div>
+    
+</body>
+</html>
